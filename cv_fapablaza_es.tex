@@ -1,0 +1,138 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{Felipe Andres Apablaza Cheuquepan}
+\address{Jose Domingo Canas 705, Depto 125 \linebreak Santiago, Chile}
+\contacts{+56 972555408 \linebreak ing.apablaza@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Experiencia Laboral}
+		\begin{cvsubsection}{Technical Lead}{Banco BICE}{Agosto 2020 -- Enero 2021}
+			\begin{itemize}
+				\item Liderar y coordinar al equipo de desarrollo, y coordinar los desarrollos necesarios de la célula con el resto  de las áreas de TI. 
+				\item Realización prueba de concepto con el proveedor “TOC” para obtener el conocimiento y habilitar
+				al equipo para implementar autenticación biométrica facial para el flujo no – cliente del
+				onboarding de inversiones. 
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Technical Lead}{Banco BCI}{Febrero 2019 -- Septiembre 2020}	
+			Célula Conversión y Beneficios
+			\begin{itemize}
+				\item Coordinación diaria de los releases de los desarrollos junto a los TLs de otras células en las Apps de iOS y Android de BCI.
+				\item Actualización del Certificado SSL en las Apps de iOS y Android de BCI para asegurar la continuidad operacional previo al vencimiento.
+				\item Análisis y corrección de un bug productivo en Android, que impedia que al presionar sobre una notificacion push, ésta redireccione hacia el producto financiero relacionado.
+			\end{itemize}
+			Célula Planes
+			\begin{itemize}
+				\item Liderar y coordinar al equipo de desarrollo en la construcción, velando por un balance apropiado entre calidad  técnica y velocidad de entrega de las soluciones, gestionando la deuda técnica generada.
+				\item Mejora en el cumplimiento del scope del Q3 2019, de un 70\% a un 110\%, provocada por mejoras en los refinamientos técnicos, entre otras.
+				\item Levantamiento, presentación y entrega a la Gerencia de Mantención, la documentación técnica del Viaje de Planes (arquitectura multinivel, dependencias, bases de datos, proceso batch, etc).
+				\item Presentación de la arquitectura de las iniciativas del Trimestre al Equipo Extendido (Arquitectura de Soluciones, Riesgo Operacional y Seguridad) para determinar factibilidad técnica.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Developer}{Falabella Financiero}{Junio 2017 -- Enero 2019}		
+			Célula de Reclamos
+			\begin{itemize}
+				\item Coordinación con las áreas de Fraude y Soporte de fraude para realizar un levantamiento de requisitos técnicos, con el fin de integrar el Viaje con el motor de reglas PayTrue.
+				\item Integración Login de Active Directory para un Frontend enfocado a los ejecutivos del Call Center, desarrollado en Angular 4, usando la librería Adal.
+				\item Desarrollo de varios microservicios en NodeJS, con sus correspondientes pruebas unitarias y despliegues en pipelines CI/CD, en Docker, superando un 90\% de covertura. Uno de ellos fue un motor de reglas, para posibilitar la evaluación de reclamos en línea. Las reglas estaban representadas en JSON.
+				\item Implementación de nuevas funcionalidades para las Apps iOS de CMR Chile, Banco Falabella Perú, CMR Argentina y Falabella Mexico, usando el patrón MVP. Pruebas unitarias superaban el 80\% de cobertura. Se usaron las tecnologías Objective-C, Swift, AFNetworking, Alamofire y XCTest.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Engineer}{Outlier SpA}{Abril 2016 -- Junio 2017}
+			\begin{itemize}
+				\item Desarrollo Engine de renderización en Python, PyOpenGL, Vertex Shaders y Fragment Shaders en GLSL y NumPy, para soportar un visualizador de objetos enfocado a la industria Minera. Este motor estaba abstraído del Backend de renderización, y era posible incorporar nuevos tipos de objetos usando Polimorfismo.
+				\item Reimplementación del motor de renderización en C++, GLM, OpenGL 3.X y OpenGL ES 2 para mejorar performance, preservando los atributos arquitectónicos anteriores, incorporando la portabilidad de plataforma.
+				\item Diseño e implementación algoritmo geométrico, que permitía hacer un corte de los objetos mediante un plano, definido por el usuario.
+				\item Integración de este Engine con aplicaciones de escritorio en Python, usando Boost.Python para generar el glue-code necesario.
+				\item Integración de este Engine con aplicaciones Web, mediante la compilación a ASM.JS / WebAssembly usando el compilador Emscripten.
+				\item Integración del Engine con aplicaciones WPF en .NET, mediante la generación de un Assembly nativo en el lenguaje C++/CLI, usando la API Nativa de Windows (WinAPI) para apoyar en esta integración.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Ingeniero Desarrollo}{Adexus}{Agosto 2012 -- Abril 2016}		
+			\begin{itemize}
+				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
+				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Encargado de Informática}{YMCA Temuco}{Julio 2010 -- Agosto 2012}		
+			\begin{itemize}
+				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
+				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Temuco}{Universidad Católica de Temuco}{2005 -- 2012}
+			\begin{itemize}
+				\item Egresado de Ingeniería Civil en Informática.
+				\item 
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Technical Experience}
+		\begin{cvsubsection}{Projects}{}{}
+			\begin{itemize}
+				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
+				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
+				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Additional Experience and Awards}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
+				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
+				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
